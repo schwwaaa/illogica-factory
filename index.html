@@ -168,9 +168,11 @@
             z-index: 2;
             display: flex;
             flex-direction: column;
+            align-items: center;
             justify-content: center;
             min-height: 620px;
             padding: clamp(42px, 8vw, 112px) clamp(24px, 6vw, 92px);
+            text-align: center;
         }
 
         .eyebrow {
@@ -178,6 +180,7 @@
             color: var(--muted);
             font: 700 12px/1.4 "Courier New", monospace;
             letter-spacing: 0.28em;
+            text-align: center;
             text-transform: uppercase;
         }
 
@@ -186,7 +189,7 @@
             position: relative;
             display: inline-flex;
             flex-direction: column;
-            align-items: flex-start;
+            align-items: center;
             width: min(100%, 1040px);
             padding: clamp(18px, 2.4vw, 28px) clamp(20px, 3vw, 34px);
             border: 1px solid rgba(104, 255, 130, 0.24);
@@ -196,6 +199,7 @@
                 inset 0 0 0 1px rgba(255, 255, 255, 0.025),
                 0 0 0 1px rgba(0, 0, 0, 0.72),
                 0 0 26px rgba(0, 254, 127, 0.08);
+            text-align: center;
         }
         
 
@@ -225,14 +229,16 @@
 
         
         h1 {
+            width: 100%;
             max-width: 920px;
-            margin: 0;
+            margin: 0 auto;
             color: var(--slime);
             font-family: "BloodyScene", "Arial Black", Impact, sans-serif;
             font-size: clamp(68px, 9.2vw, 160px);
             font-weight: 400;
             line-height: 0.82;
             letter-spacing: -0.035em;
+            text-align: center;
             text-transform: lowercase;
             text-wrap: balance;
             filter: drop-shadow(0 0 12px rgba(0, 254, 127, 0.22));
@@ -241,12 +247,14 @@
         
 
         .tagline {
-            margin: 6px 0 0;
+            width: 100%;
+            margin: 14px auto 0;
             color: #c4ffd2;
             font-family: "BloodyScene", "Arial Black", Impact, sans-serif;
             font-size: clamp(24px, 3vw, 46px);
             line-height: 0.95;
             letter-spacing: 0.03em;
+            text-align: center;
             text-shadow:
                 0 2px 0 #000,
                 0 0 16px rgba(0, 254, 127, 0.23);
@@ -259,6 +267,7 @@
         .social-nav {
             display: flex;
             flex-wrap: wrap;
+            justify-content: center;
             gap: 10px;
             margin-top: 42px;
         }
@@ -745,7 +754,7 @@
 
         <footer class="schwwaaa-footer" aria-label="schwwaaa footer logo">
             <a class="schwwaaa-footer-logo" href="https://linktr.ee/schwwaaa" target="_blank" rel="noopener noreferrer">
-                <img class="schwwaaa-footer-image" src="./img/schwwaaa-logo.png" alt="schwwaaa">
+                <img class="schwwaaa-footer-image" src="./assets/schwwaaa-logo.png" alt="schwwaaa">
             </a>
         </footer>
     </div>
